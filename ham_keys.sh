@@ -44,7 +44,7 @@ load_proxies() {
 	if [[ -f "$1" ]]; then
 		mapfile -t proxies <"$1"
 	else
-		echo "Proxy file not found. We continue without a proxy."
+		echo -e "${yellow}Proxy file not found. We continue without a proxy.${rest}"
 		proxies=()
 	fi
 }
