@@ -14,7 +14,7 @@ echo -e "${purple}============================${rest}"
 echo -en "${purple}[Optional] ${green}Enter Your Telegram Channel ID [example: ${yellow}@P_Tech2024${green}]: ${rest}"
 read -r TELEGRAM_CHANNEL_ID
 echo -e "${purple}============================${rest}"
-echo -e "${yellow}Keys will be saved in [my_keys.txt]..${rest}"
+echo -e "${yellow}generating ... Keys will be saved in [my_keys.txt]..${rest}"
 
 EVENTS_DELAY=20
 PROXY_FILE="proxy.txt"
