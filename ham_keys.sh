@@ -16,6 +16,7 @@ then
     fi
 fi
 
+clear
 echo -e "${purple}=======${yellow}Hamster Combat Game Keys${purple}=======${rest}"
 echo ""
 echo -en "${purple}[Optional] ${green}Enter Your telegram Bot token: ${rest}"
