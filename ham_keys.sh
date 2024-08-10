@@ -8,12 +8,13 @@ rest='\033[0m'
 
 echo -e "${purple}=======${yellow}Hamster Combat Game Keys${purple}=======${rest}"
 echo ""
-echo -en "${green}Enter Your telegram Bot token: ${rest}"
+echo -en "${purple}[Optional] ${green}Enter Your telegram Bot token: ${rest}"
 read -r TELEGRAM_BOT_TOKEN
 echo -e "${purple}============================${rest}"
-echo -en "${green}Enter Your Telegram Channel ID [example: ${yellow}@P_Tech2024${green}]: ${rest}"
+echo -en "${purple}[Optional] ${green}Enter Your Telegram Channel ID [example: ${yellow}@P_Tech2024${green}]: ${rest}"
 read -r TELEGRAM_CHANNEL_ID
 echo -e "${purple}============================${rest}"
+echo -e "${yellow}Keys will be saved in [my_keys.txt]..${rest}"
 
 EVENTS_DELAY=20
 PROXY_FILE="proxy.txt"
