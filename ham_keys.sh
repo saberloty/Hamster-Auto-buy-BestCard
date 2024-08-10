@@ -6,6 +6,17 @@ purple='\033[0;35m'
 green='\033[0;32m'
 rest='\033[0m'
 
+if ! command -v jq &> /dev/null
+then
+    # Check if the environment is Termux
+    if [ -n "$TERMUX_VERSION" ]; then
+        echo "Detected Termux environment."
+        pkg install -y jq
+    else
+        apt update -y && apt install -y jq
+    fi
+fi
+
 echo -e "${purple}=======${yellow}Hamster Combat Game Keys${purple}=======${rest}"
 echo ""
 echo -en "${purple}[Optional] ${green}Enter Your telegram Bot token: ${rest}"
