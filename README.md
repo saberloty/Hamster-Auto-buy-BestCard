@@ -4,7 +4,7 @@
 ```
 bash <(curl -fsSL https://raw.githubusercontent.com/Ptechgithub/Hamster-Auto-buy-BestCard/main/install.sh)
 ```
-## Get keys and send to your telegram channel
+## Get keys 🔑 and send to your telegram channel
 ```
 bash <(curl -fsSL https://raw.githubusercontent.com/Ptechgithub/Hamster-Auto-buy-BestCard/main/ham_keys.sh)
 ```
