@@ -1,4 +1,4 @@
-# Hamster-Auto-buy-BestCard & AutoClicker
+# Hamster-Auto-buy-BestCard & AutoClicker $ Get keys 🔑 
 
 ## Auto buy
 ```
