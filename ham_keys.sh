@@ -182,7 +182,7 @@ main() {
 
 			if [[ -n "$key" ]]; then
 				message="${games[$game_choice, name]} : $key"
-				echo "$message" >>my_keys.txt
+				echo "$message" | tee -a my_keys.txt
 				send_to_telegram "$message"
 			else
 				echo "Error generating key for ${games[$game_choice, name]}"
