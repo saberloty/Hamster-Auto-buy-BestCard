@@ -10,6 +10,7 @@ if ! command -v jq &> /dev/null
 then
     # Check if the environment is Termux
     if [ -n "$TERMUX_VERSION" ]; then
+        pkg update -y
         pkg install -y jq
     else
         apt update -y && apt install -y jq
