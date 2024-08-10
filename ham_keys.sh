@@ -16,6 +16,16 @@ then
     fi
 fi
 
+if ! command -v uuidgen &> /dev/null
+then
+    # Check if the environment is Termux
+    if [ -n "$TERMUX_VERSION" ]; then
+        pkg install uuid-utils -y
+    else
+        apt update -y && apt install uuid-runtime -y
+    fi
+fi
+
 clear
 echo -e "${purple}=======${yellow}Hamster Combat Game Keys${purple}=======${rest}"
 echo ""
