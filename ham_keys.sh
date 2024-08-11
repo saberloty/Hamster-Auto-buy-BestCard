@@ -155,10 +155,11 @@ generate_key() {
 
 # Send to telegram
 send_to_telegram() {
-	local message=$1
-	curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
-	-d chat_id="$TELEGRAM_CHANNEL_ID" \
-	-d text="$message" >/dev/null 2>&1
+    local message=$1
+    curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
+        -d chat_id="$TELEGRAM_CHANNEL_ID" \
+        -d text="$message" \
+        -d parse_mode="MarkdownV2" > /dev/null 2>&1
 }
 
 # key process
@@ -204,6 +205,7 @@ main() {
 
 			if [[ -n "$key" ]]; then
 				message="${games[$game_choice, name]} : $key"
+				telegram_message="\`${key}\`"
 				echo "$message" | tee -a my_keys.txt
 				send_to_telegram "$message"
 			else
