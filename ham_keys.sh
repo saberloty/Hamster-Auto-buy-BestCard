@@ -207,7 +207,7 @@ main() {
 				message="${games[$game_choice, name]} : $key"
 				telegram_message="\`${key}\`"
 				echo "$message" | tee -a my_keys.txt
-				send_to_telegram "$message"
+				send_to_telegram "$telegram_message"
 			else
 				echo "Error generating key for ${games[$game_choice, name]}"
 			fi
