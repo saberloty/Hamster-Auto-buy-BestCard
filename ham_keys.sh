@@ -102,7 +102,6 @@ login() {
 	)
 
 	if [[ $? -ne 0 ]]; then
-		echo "Error during login"
 		return
 	fi
 
@@ -180,7 +179,6 @@ generate_key_process() {
 	client_token=$(login "$client_id" "$app_token" "$proxy")
 
 	if [[ -z "$client_token" ]]; then
-		echo "Error during login."
 		return
 	fi
 
