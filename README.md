@@ -18,6 +18,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/Ptechgithub/Hamster-Auto-buy
 ```
 ![29](https://raw.githubusercontent.com/Ptechgithub/configs/main/media/29.jpg)
 ---
+### Cipher
+https://morse-code.onlycloudflare.workers.dev
+
 How to Run hamster in Browser:
 
 1) Install the [Resource Override](https://chromewebstore.google.com/detail/resource-override/pkoacgokdfckfpndoffpifphamojphii) extension in your browser. or for [Firefox](https://addons.mozilla.org/en/firefox/addon/resourceoverride)
