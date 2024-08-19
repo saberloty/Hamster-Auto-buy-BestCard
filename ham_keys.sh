@@ -33,7 +33,7 @@ echo ""
 echo -en "${purple}[Optional] ${green}Enter Your telegram Bot token: ${rest}"
 read -r TELEGRAM_BOT_TOKEN
 echo -e "${purple}============================${rest}"
-echo -en "${purple}[Optional] ${green}Enter Your Telegram Channel ID [example: ${yellow}@P_Tech2024${green}]: ${rest}"
+echo -en "${purple}[Optional] ${green}Enter Your Telegram Channel ID [example: ${yellow}@saber_dj95${green}]: ${rest}"
 read -r TELEGRAM_CHANNEL_ID
 echo -e "${purple}============================${rest}"
 echo -e "${green}generating ... Keys will be saved in [${yellow}my_keys.txt${green}]..${rest}"
@@ -53,21 +53,21 @@ games[2, name]="Chain Cube 2048"
 games[2, appToken]="d1690a07-3780-4068-810f-9b5bbf2931b2"
 games[2, promoId]="b4170868-cef0-424f-8eb9-be0622e8e8e3"
 
-games[3, name]="My Clone Army"
-games[3, appToken]="74ee0b5b-775e-4bee-974f-63e7f4d5bacb"
-games[3, promoId]="fe693b26-b342-4159-8808-15e3ff7f8767"
+games[3, name]="Train Miner"
+games[3, appToken]="82647f43-3f87-402d-88dd-09a90025313f"
+games[3, promoId]="c4480ac7-e178-4973-8061-9ed5b2e17954"
 
-games[4, name]="Train Miner"
-games[4, appToken]="82647f43-3f87-402d-88dd-09a90025313f"
-games[4, promoId]="c4480ac7-e178-4973-8061-9ed5b2e17954"
+games[4, name]="Merge Away"
+games[4, appToken]="8d1cc2ad-e097-4b86-90ef-7a27e19fb833"
+games[4, promoId]="dc128d28-c45b-411c-98ff-ac7726fbaea4"
 
-games[5, name]="Merge Away"
-games[5, appToken]="8d1cc2ad-e097-4b86-90ef-7a27e19fb833"
-games[5, promoId]="dc128d28-c45b-411c-98ff-ac7726fbaea4"
+games[5, name]="Twerk Race 3D"
+games[5, appToken]="61308365-9d16-4040-8bb0-2f4a4c69074c"
+games[5, promoId]="61308365-9d16-4040-8bb0-2f4a4c69074c"
 
-games[6, name]="Twerk Race 3D"
-games[6, appToken]="61308365-9d16-4040-8bb0-2f4a4c69074c"
-games[6, promoId]="61308365-9d16-4040-8bb0-2f4a4c69074c"
+games[6, name]="My Clone Army"
+games[6, appToken]="74ee0b5b-775e-4bee-974f-63e7f4d5bacb"
+games[6, promoId]="fe693b26-b342-4159-8808-15e3ff7f8767"
 
 # Proxys
 load_proxies() {
@@ -182,8 +182,8 @@ generate_key_process() {
 		return
 	fi
 
-	for i in {1..30}; do
-		sleep $((EVENTS_DELAY * (RANDOM % 4 + 1) / 3))
+	for i in {1..55}; do
+		sleep $((EVENTS_DELAY * (RANDOM % 3 + 1) / 3))
 		has_code=$(emulate_progress "$client_token" "$promo_id" "$proxy")
 
 		if [[ "$has_code" == "true" ]]; then
@@ -200,7 +200,7 @@ main() {
 	load_proxies "$PROXY_FILE"
 
 	while true; do
-		for game_choice in {5..6}; do
+		for game_choice in {1..5}; do
 			if [[ ${#proxies[@]} -gt 0 ]]; then
 				proxy=${proxies[RANDOM % ${#proxies[@]}]}
 			else
