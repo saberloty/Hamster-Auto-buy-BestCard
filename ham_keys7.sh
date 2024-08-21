@@ -33,7 +33,7 @@ echo ""
 echo -en "${purple}[Optional] ${green}Enter Your telegram Bot token: ${rest}"
 read -r TELEGRAM_BOT_TOKEN
 echo -e "${purple}============================${rest}"
-echo -en "${purple}[Optional] ${green}Enter Your Telegram Channel ID [example: ${yellow}@saber_dj95${green}]: ${rest}"
+echo -en "${purple}[Optional] ${green}Enter Your Telegram Channel ID [example: ${yellow}@P_Tech2024${green}]: ${rest}"
 read -r TELEGRAM_CHANNEL_ID
 echo -e "${purple}============================${rest}"
 echo -e "${green}generating ... Keys will be saved in [${yellow}my_keys.txt${green}]..${rest}"
@@ -65,13 +65,14 @@ games[5, name]="Twerk Race 3D"
 games[5, appToken]="61308365-9d16-4040-8bb0-2f4a4c69074c"
 games[5, promoId]="61308365-9d16-4040-8bb0-2f4a4c69074c"
 
-games[6, name]="My Clone Army"
-games[6, appToken]="74ee0b5b-775e-4bee-974f-63e7f4d5bacb"
-games[6, promoId]="fe693b26-b342-4159-8808-15e3ff7f8767"
+games[6, name]="Polysphere"
+games[6, appToken]="2aaf5aee-2cbc-47ec-8a3f-0962cc14bc71"
+games[6, promoId]="2aaf5aee-2cbc-47ec-8a3f-0962cc14bc71"
 
-games[7, name]="Polysphere"
-games[7, appToken]="2aaf5aee-2cbc-47ec-8a3f-0962cc14bc71"
-games[7, 2aaf5aee-2cbc-47ec-8a3f-0962cc14bc71"
+games[7, name]="My Clone Army"
+games[7, appToken]="74ee0b5b-775e-4bee-974f-63e7f4d5bacb"
+games[7, promoId]="fe693b26-b342-4159-8808-15e3ff7f8767"
+
 # Proxys
 load_proxies() {
 	if [[ -f "$1" ]]; then
